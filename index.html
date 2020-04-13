@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vue from Scratch</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div id="app">
+      <h1 v-bind:title="menu">{{ title }}</h1> 
+      <!-- two options to use vue data -->
+      <p>{{ content }}</p>
+      <!-- double curly's -->
+      <p v-text="content"></p>
+      <!-- v for vue, -text -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#app', // el stands for element
+
+        data: {
+          title: 'My Title',
+          content: 'Here is my text',
+          menu: 'My Menu Data',
+        },
+      });
+    </script>
+
+    <script src="" async defer></script>
+  </body>
+</html>
