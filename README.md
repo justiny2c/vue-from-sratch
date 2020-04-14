@@ -1,3 +1,4 @@
 ### Vue.js from Sratch
 
-Basic project setup and display
+1) Basic project setup and display
+2) Bind data and Todo-List
